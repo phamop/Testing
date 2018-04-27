@@ -1,0 +1,70 @@
+<?php
+
+if (isset($_GET['b1'])) {
+  //Using GET, POST or COOKIE
+  $var_value = $_REQUEST['b1'];
+  $alpha9 = split (" ", $var_value);
+  numdigit($alpha9);
+}
+
+if (isset($_GET['b2'])) {
+  //Using GET, POST or COOKIE
+  $var_value = $_REQUEST['b2'];
+  $alpha9 = split (" ", $var_value);
+  alpha($alpha9);
+}
+
+if (isset($_GET['wt1'])) {
+  //Using GET, POST or COOKIE
+  $var_value = $_REQUEST['wt1'];
+  $alpha9 = split (" ", $var_value);
+  numdigit($alpha9);
+}
+
+if (isset($_GET['wt2'])) {
+  $var_value = $_REQUEST['wt2'];
+  $alpha9 = split (" ", $var_value);
+  alpha($alpha9);
+}
+
+function alpha($alpha9){
+    $i = 0;
+    echo '<table>';
+    echo '<tr><td>';
+      echo "Word";
+      echo '</td><td>';
+      echo "Length";
+      echo '</td></tr>';
+     while ($i < sizeof($alpha9)){
+
+        if ( preg_match("/^[a-zA-Z ]{3}/", $alpha9[$i])  ){
+            echo '<tr><td>';
+            echo $alpha9[$i];
+            echo '</td><td>';
+            echo mb_strlen($alpha9[$i], 'utf8' );
+            echo '</td></tr>';
+        }
+        $i++;
+    }
+}
+
+function numdigit($alpha9) {
+    $i = 0;
+    echo '<table>';
+    echo '<tr><td>';
+      echo "Word";
+      echo '</td><td>';
+      echo "Length";
+      echo '</td></tr>';
+    while ($i < sizeof($alpha9)){
+            if ( preg_match("/^\d{3}/", $alpha9[$i]) ){
+                echo '<tr> <td>';
+                echo $alpha9[$i];
+                echo '</td><td>';
+                echo mb_strlen($alpha9[$i], 'utf8' );
+                echo '</td></tr>';
+            }
+            $i++;
+    }
+ }
+?>
