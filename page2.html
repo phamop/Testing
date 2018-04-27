@@ -1,0 +1,126 @@
+<!--<?xml version = "1.0"?> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang = "en"  xmlns = "http://www.w3.org/1999/xhtml">
+<!--  This is validated form page-->
+	<head>
+
+			<title> Web Programming From for  ITEC 3020</title>
+				<meta charset="utf-8"/>
+				<link rel="stylesheet" href="cpage2.css">
+				<script src="jpage2.js" type = "text/javascript"></script>
+				<style type = "text/css">
+
+			</style>
+	</head>
+
+	<body>
+				<div id="container">
+						<header>
+		      				<h1> ITEC3020 Assignment 1: Part 2 </h1>
+		      			</header>
+		      		<section>
+
+					<Table border="1" sytle width="auto" height='400px'>
+						<TR><TD colspan="2">Programming The
+							World Wide Web, Robertw . Sebesta, 2015</TD><TD colspan="2">Student Name</TD></TR>
+						<TR><TD rowspan="2"  <blockquote> <poem2>
+<p> Don’t look for the flaws as you go through life;
+And even when you find them, 
+It is wise and kind to be somewhat blind
+And look for the virtue behind them.
+For the cloudiest night has a hint of light
+Somewhere in its shadows hiding;
+It is better by far to hunt for a star,
+Than the spots on the sun abiding.
+</p>
+<p>
+The current of life runs ever away
+To the bosom of God’s great ocean.
+Don’t set your force ‘gainst the river’s course
+And think to alter its motion.
+Don’t waste a curse on the universe –
+Remember it lived before you.
+Don’t butt at the storm with your puny form,
+But bend and let it go o’er you.
+</p>
+<p>
+The world will never adjust itself
+To suit your whims to the letter.
+Some things must go wrong your whole life long,
+And the sooner you know it the better.
+It is folly to fight with the Infinite,
+And go under at last in the wrestle;
+The wiser man shapes into God’s plan
+As water shapes into a vessel. </p>
+<pre>
+			by Ella Wheeler Wilcox
+			</pre>
+
+			</poem2>
+			<blockquote>
+						</TD><TD rowspan="2"> <blockquote>
+
+		Programming the World Wide Web provides a comprehensive introduction to the tools and
+		skills required for both client- and server-side programming, teaching students how to
+		develop platform-independent sites using the most current Web development
+		technology. Essential programming exercises are presented using a manageable
+		progression: students begin with a foundational XHTML Web site and employ new
+		languages and technologies to add features as they are discussed in the course.
+
+</blockquote></TD> <TD colspan="2"><img src = "tor-skyline.jpg" height = "100" width = "200"
+            alt = "Missing Pic of Toronto City" /></TD></TR>
+						<TR><TD colspan="2"><img src = "avillage.jpg" height = "100" width = "200"
+            alt = "Missing Pic of a beautiful Village" /></TD></TR>
+						<TR><TD><form name="itform" action = "" method="post">
+								<h3> Contact Info </h3>
+						<label>	 First Name: <input type = "text" name = "fname" id="fname" size = "15" maxlength = "25" /> </label>
+						<br /><label>	 Last  Name: <input type = "text" name = "lname" id="lname" size = "15" maxlength = "25" /> </label>
+					<!--	<br /><label>Phone Number: <input type = "text"  name = "phone" id = "phone" /> </label> <br /> -->
+         			<br /><input type="submit" name="submit" id="submit" value="submit" onclick="hcontact();" />
+						<input type = "reset"  name="reset" id = "reset" value="reset" />
+						</form>
+						</TD> <TD><strong> Hobbies: </strong>
+						<form name="chkform" method="post" action=" ">
+						<label><input type = "checkbox"  name = "hob[]" value = "Sports"/> Sports </label>
+							<label> <input type = "checkbox"  name = "hob[]"  value = "Movies"/> Movies </label >
+							<label><input type = "checkbox"  name = "hob[]" value = "Music"/> Music	</label >
+							<label><input type = "checkbox" name = "hob[]"  value = "Shopping"/> Shopping  </label>
+							<label><input type = "checkbox" name = "hob[]"  value = "Others"/> Others  </label>
+							<input type="submit" name="submit" value="submit" onclick=" return atboxcheck();" />
+							</form</TD>
+							<TD colspan="2" and rowspan="2"><img src = "mountain1.jpg" height = "200" width = "200"
+           				 alt = "Missing Pic of a beautiful Village" /></TD></TR>
+						<TR><TD> <strong> Fav. Name: </strong> <label><input type = "radio" name = "favname" onclick="checkRadio();" value = "Peter" id="radio_1"checked = "checked" /> Peter </label>
+								<!--<label><input type = "radio" name = "favname" onclick="checkRadio();" value = "Kenny" id="radio_2"/> Kenny </label> -->
+								<label><input type = "radio" name = "favname" onclick="checkRadio();" value = "John" id="radio_3"/> John </label>
+								<label><input type = "radio" name = "favname" onclick="checkRadio();" value = "Mary" id="radio_4" /> Mary </label></TD>
+								<TD> <label> List of 1st 4 digit:
+								<form name="selform"method="post"  action=" ">
+								<select onchange="hdropdown(this.form)" name="edulevel" id="edulevel">
+                        	<option value="2"> Two	</option>
+							<option value="1"> one </option>
+							<option value="3"> Three</option>
+							<option value="9"> Nine </option>
+							<!--<option value="diploma"> Diploma </option>
+							<option value="certificate"> Certificate </option>
+							<option value="others"> Others </option> -->
+							</select> </label>
+							</TD></TR>
+
+					</Table>
+					<Table >
+
+
+						<TR><TD colspan="2" width="300"><button div ="formButtonfront" type="submit" onclick="myname();" value="Button3" name="button3" >button3</div></button> </TD>
+						<TD width="300">  <button div ="formButtonfront" type="submit" value="Button2" name="button2" >button2</div></button></TD>
+						<TD width="300"><button  div ="formButtonfront" type="submit" value="Button1" name="button1" >button1</div></button></TD></TR>
+						<input type = "hidden" name = "Input1"   id="Input1" value = "oluwafemi" />
+
+
+				</Table>
+					</form>
+					</section>
+
+	</body>
+</html>
